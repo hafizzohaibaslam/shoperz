@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.carousel.carousel.carousel-slider {
+  position: static;
+}
+
+.carousel.carousel .control-dots {
+  margin-bottom: 1rem;
+}
+
+.carousel.carousel .control-dots .dot {
+  width: 1rem;
+  height: 1rem;
+  transition: 300ms width;
+}
+
+.carousel.carousel .control-dots .dot.selected {
+  width: 3rem;
+  border-radius: 1rem;
+}
+
+
+
+.custom-arrow {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  height: 40px;
+  outline: none;
+  position: absolute;
+  top: 33%;
+  transform: translateY(-50%);
+  width: 80px;
+}
+
+.custom-arrows{
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  height: 40px;
+  outline: none;
+  position: absolute;
+  /* top: 33%; */
+  transform: translateY(-100%); 
+  width: 80px;
+
+}
+
+.custom-prev {
+  left: 10px;
+}
+
+.custom-next {
+  right: 10px;
+}
+
+.slick-next:before, .slick-prev:before {
+  font-size: 20px;
+  line-height: 1;
+  opacity: .75;
+  color: black;
+}
